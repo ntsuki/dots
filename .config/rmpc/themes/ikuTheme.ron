@@ -2,7 +2,7 @@
 #![enable(unwrap_newtypes)]
 #![enable(unwrap_variant_newtypes)]
 (
-    default_album_art_path: None,
+    default_album_art_path: "/home/iku/.config/rmpc/placeholder.png",
     show_song_table_header: false,
     draw_borders: true,
     browser_column_widths: [20, 38, 42],
