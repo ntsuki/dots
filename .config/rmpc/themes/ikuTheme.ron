@@ -120,7 +120,7 @@
             (
                 left: [
 
-                    (kind: Property(Status(StateV2(playing_label: "  ", paused_label: "  ", stopped_label: "  "))), style: (fg: "#f0c674"))
+                    (kind: Property(Status(StateV2(playing_label: "  ", paused_label: "  ", stopped_label: "  "))), style: (fg: "#f0c674")),
 
 
                 ],
@@ -130,6 +130,7 @@
                     )
                 ],
                 right: [
+
                     (kind: Text(" Vol: "), style: (fg: "#d8dee9", modifiers: "Bold")),
 
                     (kind: Property(Status(Volume)), style: (fg: "#f0c674", modifiers: "Bold")),
@@ -157,6 +158,9 @@
                 ],
                 right: [
 
+		    (kind: Text("~ = cmd "), style: (fg: "#f0c674", modifiers: "Bold")),
+
+                    (kind: Text("/ "),style: (fg: "#d8dee9")),
                     
                     (kind: Property(Status(RepeatV2(
 
