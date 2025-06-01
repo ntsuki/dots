@@ -8,7 +8,7 @@
     cache_dir: None,
     lyrics_dir: "/home/iku/.lyrics",
     on_song_change: None,
-    volume_step: 5,
+    volume_step: 1,
     max_fps: 60,
     scrolloff: 0,
     wrap_navigation: false,
@@ -32,11 +32,11 @@
             "<Tab>":   NextTab,
             "<S-Tab>": PreviousTab,
             "&":       SwitchToTab("Playing"),
-            "é":       SwitchToTab("Artists"),
-            "3":       SwitchToTab("Albums"),
-            "4":       SwitchToTab("Playlists"),
-            "5":       SwitchToTab("Dir."),
-            "6":       SwitchToTab("Search"),
+            "é":       SwitchToTab("Find"),
+            "3":       SwitchToTab("Artists"),
+            "4":       SwitchToTab("Albums"),
+            "5":       SwitchToTab("Playlists"),
+            "6":       SwitchToTab("Directories"),
             "q":       Quit,
             ">":       NextTrack,
             "p":       TogglePause,
@@ -179,3 +179,4 @@
     ],
 
 )
+
