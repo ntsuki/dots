@@ -135,7 +135,7 @@
 
                     (kind: Property(Status(Volume)), style: (fg: "#f0c674", modifiers: "Bold")),
 
-                    (kind: Text("% "), style: (fg: "#d8dee9", modifiers: "Bold"))
+                    (kind: Text("%  "), style: (fg: "#d8dee9", modifiers: "Bold"))
                 ]
             ),
             (
@@ -152,8 +152,8 @@
                         default: (kind: Text("Unknown"), style: (fg: "#f0c674", modifiers: "Bold"))
                     ),
                     (kind: Text(" - "), style: (fg: "#d8dee9", modifiers: "Bold")),
-                    (kind: Property(Song(Album)), style: (fg: "#d8dee9", modifiers: "Bold"),
-                        default: (kind: Text("Unknown Album"), style: (fg: "#d8dee9", modifiers: "Bold"))
+                    (kind: Property(Song(Album)), style: (fg: "#d8dee9", modifiers: "Bold | Italic"),
+                        default: (kind: Text("Unknown Album"), style: (fg: "#d8dee9", modifiers: "Bold | Italic"))
                     )
                 ],
                 right: [
@@ -164,7 +164,7 @@
                     
                     (kind: Property(Status(RepeatV2(
 
-                                    on_label: " ", off_label: " ",
+                                    on_label: "", off_label: "",
 
                                     on_style: (fg: "#f0c674", modifiers: "Bold"), off_style: (fg: "#d8dee9", modifiers: "Bold"))))),
 
@@ -172,7 +172,7 @@
 
                     (kind: Property(Status(RandomV2(
 
-                                    on_label: " ", off_label: " ",
+                                    on_label: "", off_label: "",
 
                                     on_style: (fg: "#f0c674", modifiers: "Bold"), off_style: (fg: "#d8dee9", modifiers: "Bold"))))),
 
@@ -180,7 +180,7 @@
 
                     (kind: Property(Status(ConsumeV2(
 
-                                    on_label: "󰮯 ", off_label: "󰮯 ", oneshot_label: "󰮯󰇊 ",
+                                    on_label: "󰮯", off_label: "󰮯", oneshot_label: "󰮯󰇊",
 
                                     on_style: (fg: "#f0c674", modifiers: "Bold"), off_style: (fg: "#d8dee9", modifiers: "Bold"))))),
 
