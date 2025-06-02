@@ -1,0 +1,96 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+     "logo": {
+         "type": "file",
+	 "color": { "1": "red"},
+
+         "source": "~/.config/fastfetch/miku.txt",
+	 "padding": {"left": 4, "right": 5, "top": 1}
+    },
+    "display": {
+        "separator": ": ",
+	"color": {
+		"keys": "white"
+	},
+
+        "constants": [
+            "─────────────────"
+        ],
+        "key": {
+            "type": "string",
+            "paddingLeft": 2
+        }
+	
+    },
+    "modules": [
+
+
+	{
+            "type": "custom",
+            "format": "",
+            "outputColor": "separator"
+
+        },
+
+
+	{
+            "type": "custom",
+            "format": "",
+            "outputColor": "separator"
+
+        },
+
+
+        {
+            "type": "title",
+            "format": "{#1;red}┌ {user-name}@{host-name} ────────────────────────────────┐{#}"
+
+        },
+
+        "host",
+        "cpu",
+        "gpu",
+        "disk",
+        "memory",
+        "display",
+        "gamepad",
+
+        {
+            "type": "custom",
+            "format": "",
+            "outputColor": "separator"
+
+        },
+
+        "os",
+        "kernel",
+        "de",
+        "shell",
+        "terminal",
+        "terminalfont",
+        "packages",
+
+	{
+            "type": "custom",
+            "format": "",
+            "outputColor": "separator"
+        },
+
+        "uptime",
+        "locale",
+
+        {
+            "type": "custom",
+            "format": "{#1;red}└ 1.0 You are (Not) Alone ───────────────────────┘{#}"
+        },
+
+
+	{
+            "type": "colors",
+            "paddingLeft": 2,
+            "symbol": "circle"
+        }
+    ]
+}
+
+
