@@ -1,0 +1,91 @@
+* {
+    font: "FiraCode 11";
+    foreground: #919ba0;
+    background-color: #282c34;
+    active-background: #87898d;
+    urgent-background: #ff5555;
+    urgent-foreground: #282a36;
+    selected-background: @active-background;
+    selected-urgent-background: @urgent-background;
+    selected-active-background: @active-background;
+    selected-active-foreground: @background-color;
+    separatorcolor: @active-background;
+    bordercolor: #585f63;
+}
+
+window {
+    background-color: @background-color;
+    width: 45%;
+    height: 40%;
+    border:           1;
+    border-color:     @bordercolor;
+    padding:          3;
+}
+
+entry {
+    spacing:    0;
+    text-color: @foreground;
+}
+prompt {
+    spacing:    0;
+    text-color: @foreground;
+}
+inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: @foreground;
+}
+
+
+/*_______________ELEMENTS_______________*/
+
+element-text{
+    background-color: inherit;
+    text-color: inherit;
+}
+element-icon{
+	background-color: inherit;
+	text-color: inherit;
+	size: 1em;
+}
+element.normal.normal {
+    background-color: @background-color;
+    text-color:       @foreground;
+}
+element.normal.urgent {
+    background-color: @urgent-background;
+    text-color:       @urgent-foreground;
+}
+element.normal.active {
+    background-color: @active-background;
+    text-color:       @foreground;
+}
+element.selected.normal {
+    background-color: @selected-background;
+    text-color:       @background-color;
+}
+element.selected.urgent {
+    background-color: @selected-urgent-background;
+    text-color:       @foreground;
+}
+element.selected.active {
+    background-color: @selected-active-background;
+    text-color:       @foreground;
+}
+element.alternate.normal {
+    background-color: @background-color;
+    text-color:       @foreground;
+}
+element.alternate.urgent {
+    background-color: @urgent-background;
+    text-color:       @foreground;
+}
+element.alternate.active {
+    background-color: @active-background;
+    text-color:       @foreground;
+}
+
