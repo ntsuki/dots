@@ -4,3 +4,4 @@ My current "dots" repo contains config for :
 - rmpc
 - kitty
 - fastfetch
+- rofi
