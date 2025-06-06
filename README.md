@@ -5,3 +5,4 @@ My current "dots" repo contains config for :
 - kitty
 - fastfetch
 - rofi
+- mpd
