@@ -6,3 +6,4 @@ My current "dots" repo contains config for :
 - fastfetch
 - rofi
 - mpd
+- yazi
